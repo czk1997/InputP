@@ -1,5 +1,7 @@
 package vote.g19.inputp;
 
+import android.util.Log;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -244,7 +246,6 @@ class MsgEncoder {
 class MsgDecoder {
     // used for reading Strings
     private BufferedReader reader;
-
     /*
      * Constructor
      */
@@ -264,7 +265,7 @@ class MsgDecoder {
         if (message != null && message.length() > 2) {
 
             builder.append(message);
-
+            Log.e("test", message);
             while (message != null && !message.endsWith(")")) {
                 message = reader.readLine();
                 builder.append("\n" + message);
