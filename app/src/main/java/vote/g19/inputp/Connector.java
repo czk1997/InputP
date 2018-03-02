@@ -28,13 +28,14 @@ public class Connector {
             msgEncoder.sendMsg(k);
             KeyValueList k2= new KeyValueList();
             k2.putPair("Scope","VotingSystem");
-            k2.putPair("MessageType","Register");
+            k2.putPair("MessageType","Connect");
             k2.putPair("Role","Basic");
             k2.putPair("Name","Voting System");
             msgEncoder.sendMsg(k2);
             KeyValueList k3= new KeyValueList();
             k3.putPair("Scope","VotingSystem");
             k3.putPair("MsgID","21");
+            k3.putPair("MessageType","Setting");
             k3.putPair("Passcode","1234567");
             k3.putPair("SecurityLevel","3");
             k3.putPair("Name","Voting System");

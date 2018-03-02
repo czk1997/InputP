@@ -28,6 +28,8 @@ public class SmsReceiver extends BroadcastReceiver {
                     KeyValueList temp=new KeyValueList();
                     temp.putPair("Scope","VotingSystem");
                     temp.putPair("VoterPhoneNo",messages[i].getOriginatingAddress());
+                    temp.putPair("MessageType","Reading");
+                    temp.putPair("Sender","VotingSystem");
                     temp.putPair("MsgID","701");
                     temp.putPair("CandidateID",messages[i].getMessageBody());
                     MainActivity.q.offer(temp);
