@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vote.g19.inputp.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="379dp"
+        android:layout_height="499dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Server Address"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="49dp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Port"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="122dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect"
+            tools:layout_editor_absoluteX="123dp"
+            tools:layout_editor_absoluteY="202dp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="343dp"
+            android:layout_height="336dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:textSize="8sp"
+            tools:layout_editor_absoluteX="21dp"
+            tools:layout_editor_absoluteY="280dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
