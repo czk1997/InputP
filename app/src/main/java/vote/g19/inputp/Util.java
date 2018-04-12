@@ -261,9 +261,7 @@ class MsgDecoder {
         StringBuilder builder = new StringBuilder();
 
         String message = reader.readLine();
-
         if (message != null && message.length() > 2) {
-
             builder.append(message);
             Log.e("test", message);
             while (message != null && !message.endsWith(")")) {

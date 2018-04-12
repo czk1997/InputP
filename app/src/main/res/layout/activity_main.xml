@@ -35,9 +35,20 @@
             tools:layout_editor_absoluteX="55dp"
             tools:layout_editor_absoluteY="122dp" />
 
+        <EditText
+            android:id="@+id/passedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="textEmailAddress|textPersonName|number"
+            android:text="123456"
+            tools:editable="false"
+            tools:focusableInTouchMode="false" />
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="61dp"
+            android:layout_height="62dp"
             android:orientation="horizontal">
 
             <Button
@@ -52,7 +63,7 @@
             <Button
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="58dp"
                 android:layout_weight="1"
                 android:text="Who is First" />
 
@@ -60,7 +71,7 @@
 
         <EditText
             android:id="@+id/editText3"
-            android:layout_width="343dp"
+            android:layout_width="match_parent"
             android:layout_height="336dp"
             android:ems="10"
             android:inputType="textMultiLine"
@@ -68,6 +79,13 @@
             android:textSize="8sp"
             tools:layout_editor_absoluteX="21dp"
             tools:layout_editor_absoluteY="280dp" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
